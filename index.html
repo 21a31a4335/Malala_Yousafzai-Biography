@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register Page</title>
+</head>
+<body>
+    <form action="./login.html">
+        <p>
+            <label for="name">Name:</label>
+            <input id="name" type="text" name="name" required>
+        </p>
+        <p>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+        </p>
+        <p>
+            <label for="phone">Phone Number:</label>
+            <input type="tel" name="phone" id="phone" required>
+        </p>
+        <p>
+            <label for="password">Password:</label>
+            <input type="password" name="password" id="password" required>
+        </p>
+        <p>
+            <label for="gender">Gender:</label>
+            <input type="radio" name="gender" id="male" value="male" required>
+            <label for="male">Male</label>
+            <input type="radio" name="gender" id="female" value="female" required>
+            <label for="female">Female</label>
+        </p>
+        <p>
+            <label for="Address">Address:</label>
+            <input type="textarea" name="Address" id="Address" required>
+        </p>
+        <p>
+            <label for="pic">Profile pic:</label>
+            <input type="file" name="pic" id="pic" required>
+        </p>
+        <p>
+            <label for="city">City:</label>
+            <select id="city" required>
+                <option type="checkbox" value="">Select a City</option>
+                <option type="checkbox" value="Hyderabad">Hyderabad</option>
+                <option type="checkbox" value="Banglore">Banglore</option>
+                <option type="checkbox" value="Chennai">Chennai</option>
+                <option type="checkbox" value="Vizag">Vizag</option>
+                <option type="checkbox" value="Delhi">Delhi</option>
+            </select>
+        </p>
+        <p>
+            <label for="education">Education:</label>
+            <input type="checkbox" name="10th" id="10th">
+            <label for="10th">10th</label>
+            <input type="checkbox" name="inter" id="Inter">
+            <label for="Inter">Inter</label>
+            <input type="checkbox" name="diploma" id="Diploma">
+            <label for="Diploma">Diploma</label>
+            <input type="checkbox" name="BTech" id="Btech">
+            <label for="BTech">BTech</label>
+            <input type="checkbox" name="Degree" id="Degree">
+            <label for="Degree">Degree</label>
+        </p>
+        <p>
+            <button>Register</button>
+        </p>
+    </form>
+</body>
+</html>
