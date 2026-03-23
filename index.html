@@ -1,55 +1,117 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Register Page</title>
+    <title>Register</title>
+    <style>
+        body {
+            background: #7F00FF;
+            background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+            background: linear-gradient(to right, #E100FF, #7F00FF);
+            color: white;
+        }
+
+        .parent {
+            background-color: rgba(255, 255, 255, 0.4);
+            backdrop-filter: blur(4px);
+            width: 30%;
+            height: 50%;
+            margin: 5% auto 0% auto;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 10px 20px 10px 20px;
+            box-shadow: 0px 1px 10px rgba(255, 255, 255, 0.7);
+        }
+
+        .form-field input {
+            background-color: rgba(255, 255, 255, 0.4);
+            padding: 10px;
+            width: 80%;
+            margin: 0% 10px;
+            border: none;
+            border-radius: 10px;
+        }
+
+        .form-field input::placeholder {
+            color: white;
+        }
+
+        .parent div {
+            margin: 5% 0%;
+        }
+
+        .form-checkbox {
+            display: flex;
+            width: 80%;
+            margin: 5% auto !important;
+            text-align: left;
+        }
+
+        .form-field button {
+            background-color: #4ea1d7;
+            color: white;
+            width: 85%;
+            border-radius: 10px;
+            padding: 15px 20px;
+        }
+
+        .form-pic {
+            width: 80%;
+            margin: 5% auto !important;
+            text-align: left;
+        }
+
+        .form-radio {
+            width: 80%;
+            margin: 5% auto !important;
+            text-align: left;
+        }
+    </style>
 </head>
+
 <body>
-    <form action="./login.html">
-        <p>
-            <label for="name">Name:</label>
-            <input id="name" type="text" name="name" required>
-        </p>
-        <p>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-        </p>
-        <p>
-            <label for="phone">Phone Number:</label>
-            <input type="tel" name="phone" id="phone" required>
-        </p>
-        <p>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password" required>
-        </p>
-        <p>
+    <form class="parent" action="./login.html">
+        <h2>Welcome</h2>
+        <div class="form-field">
+            <input type="text" name="name" placeholder="Name" required>
+        </div>
+        <div class="form-field">
+            <input type="email" name="email" placeholder="email" required>
+        </div>
+        <div class="form-field">
+            <input type="tel" name="phone" placeholder="Phone no." required>
+        </div>
+        <div class="form-field">
+            <input type="password" name="password" placeholder="Password" required>
+        </div>
+        <div class="form-field">
+            <input type="textarea" name="Address" placeholder="Address" required>
+        </div>
+        <div class="form-pic">
+            <label for="pic">Profile pic:</label>
+            <input type="file" name="pic" id="pic" required>
+        </div>
+        <div class="form-radio">
             <label for="gender">Gender:</label>
             <input type="radio" name="gender" id="male" value="male" required>
             <label for="male">Male</label>
             <input type="radio" name="gender" id="female" value="female" required>
             <label for="female">Female</label>
-        </p>
-        <p>
-            <label for="Address">Address:</label>
-            <input type="textarea" name="Address" id="Address" required>
-        </p>
-        <p>
-            <label for="pic">Profile pic:</label>
-            <input type="file" name="pic" id="pic" required>
-        </p>
-        <p>
+        </div>
+        <div class="form-checkbox">
             <label for="city">City:</label>
             <select id="city" required>
-                <option type="checkbox" value="">Select a City</option>
-                <option type="checkbox" value="Hyderabad">Hyderabad</option>
-                <option type="checkbox" value="Banglore">Banglore</option>
-                <option type="checkbox" value="Chennai">Chennai</option>
-                <option type="checkbox" value="Vizag">Vizag</option>
-                <option type="checkbox" value="Delhi">Delhi</option>
+                <option value="">Select a City</option>
+                <option value="Hyderabad">Hyderabad</option>
+                <option value="Banglore">Banglore</option>
+                <option value="Chennai">Chennai</option>
+                <option value="Vizag">Vizag</option>
+                <option value="Delhi">Delhi</option>
             </select>
-        </p>
-        <p>
+        </div>
+        <div class="form-checkbox">
             <label for="education">Education:</label>
             <input type="checkbox" name="10th" id="10th">
             <label for="10th">10th</label>
@@ -61,10 +123,11 @@
             <label for="BTech">BTech</label>
             <input type="checkbox" name="Degree" id="Degree">
             <label for="Degree">Degree</label>
-        </p>
-        <p>
+        </div>
+        <div class="form-field">
             <button>Register</button>
-        </p>
+        </div>
     </form>
 </body>
+
 </html>

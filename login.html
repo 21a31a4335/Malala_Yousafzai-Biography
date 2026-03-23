@@ -1,24 +1,116 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login Page</title>
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+    <style>
+        body {
+            background: #7F00FF;
+            background: -webkit-linear-gradient(to right, #E100FF, #7F00FF);
+            background: linear-gradient(to right, #E100FF, #7F00FF);
+            color: white;
+        }
+
+        .parent{
+            background-color: rgba(255,255,255,0.4);
+            backdrop-filter: blur(4px);
+            width: 25%;
+            margin: 5% auto 0% auto;
+            text-align: center;
+            font-family: sans-serif;
+            padding: 10px 20px 30px 20px;
+            box-shadow: 0px 1px 10px rgba(255,255,255,0.7);
+        }
+
+        .form-field input {
+            background-color:rgba(255,255,255,0.4);
+            padding: 10px;
+            width: 80%;
+            margin:0% 10px;
+            border: none;
+            border-radius: 10px;
+        }
+        .form-field input::placeholder{
+            color: white;
+        }
+
+        .parent div {
+            margin: 5% 0%;
+        }
+
+        .form-checkbox {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 80%;
+            margin: auto !important;
+            padding: 0px 10px;
+        }
+        body a{
+            text-decoration: none;
+            color: white;
+        }
+        .form-field button{
+            background-color: #4ea1d7;
+            color: white;
+            width: 85%;
+            border-radius: 10px;
+            padding: 15px 20px;
+        }
+        .form-links{
+            width: 85%;
+            margin: 10% auto !important;
+        }
+        .form-links a{
+            border:1px solid black;
+            border-radius: 10px;
+            width: 80%;
+            padding: 15px 11px;
+            margin:0px 10px;
+            color: white !important;
+            background-color:rgba(255,255,255,0.4);
+        }
+    </style>
 </head>
+
 <body>
-    <form action="./Biography.html">
-        <p>
-            <label for="email">Email:</label>
-            <input type="email" name="email" id="email" required>
-        </p>
-        <p>
-            <label for="password">Password:</label>
-            <input type="password" name="password" id="password" required>
-        </p>
-        <a href="">forget password</a>
-        <p>
-            <button>Submit</button>
-        </p>
+    <form class="parent" action="./biography.html">
+        <h2>Welcome Back</h2>
+        <p>Sign in to your account</p>
+        <div class="form-field">
+            <input type="email" placeholder="Email Address" required>
+        </div>
+        <div class="form-field">
+            <input type="password" placeholder="Password" required>
+        </div>
+        <div class="form-checkbox">
+            <div>
+                <input type="checkbox" id="remember">
+                <label for="remember">Remember me</label>
+            </div>
+            <a href="">Forget Password</a>
+        </div>
+        <div class="form-field">
+            <button>Sign In</button>
+        </div>
+        <div class="form-field">
+            <p>or continue with</p>
+        </div>
+        <div class="form-links">
+            <a href="https://www.google.com/">
+                <i class="fa-brands fa-google"></i>Google
+            </a>
+            <a href="https://github.com/">
+                <i class="fa-brands fa-github"></i>GitHub
+            </a>
+        </div>
+        <div class="form-field">
+            Don't have an account?
+            <a href="">Sign up</a>
     </form>
 </body>
+
 </html>
